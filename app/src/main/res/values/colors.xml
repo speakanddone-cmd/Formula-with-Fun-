@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary app colors (light) -->
+    <color name="colorPrimary">#43A047</color>        <!-- your green -->
+    <color name="colorPrimaryDark">#357a38</color>
+    <color name="colorAccent">#FFB300</color>         <!-- your yellow -->
+    <color name="fadedGreen">#66BB6A</color>
+
+    <!-- Background / surfaces -->
+    <color name="background">#FAFAFA</color>          <!-- page background (light) -->
+    <color name="colorSurface">#FFFFFF</color>        <!-- card / surface background -->
+    <color name="formulaCard">#FFFFFF</color>
+
+    <!-- On-* colors: text/icons that sit on top of the above -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSurface">#212121</color>
+    <color name="colorOnBackground">#212121</color>
+
+    <!-- Text / hints -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+
+    <!-- Search / input styling -->
+    <color name="searchBorderGreen">#23A411</color>
+    <color name="search_text">#000000</color>
+    <color name="search_hint">#66000000</color>
+
+    <!-- Favorites / speaker -->
+    <color name="starActive">#FFD600</color>
+    <color name="starInactive">#D3D3D3</color>
+    <color name="speakerActive">#43A047</color>
+    <color name="speakerInactive">#BDBDBD</color>
+
+    <!-- Exit / destructive -->
+    <color name="exitRed">#E53935</color>
+
+    <!-- Quiz Option Buttons Palette (preserve your values) -->
+    <color name="optionNormalBg">#4B06B7</color>
+    <color name="optionNormalBorder">#4B06B7</color>
+    <color name="optionSelectedBg">#7D3CFA</color>
+    <color name="optionSelectedBorder">#FFFFFF</color>
+    <color name="optionPressedBg">#7D3CFA</color>
+    <color name="optionPressedBorder">#FFFFFF</color>
+
+    <!-- Legacy / compatibility names (keep if other code references them) -->
+    <color name="textPrimaryAlt">#FFFFFF</color> <!-- kept for places expecting white text -->
+</resources>

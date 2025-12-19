@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Choose Your Standard"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="36dp"/>
+
+    <!-- Standard 8 -->
+    <Button
+        android:id="@+id/btnStd8"
+        android:text="Standard 8"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"/>
+
+    <!-- Standard 9 -->
+    <Button
+        android:id="@+id/btnStd9"
+        android:text="Standard 9"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/starActive"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/btnStd8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"/>
+
+    <!-- Standard 10 -->
+    <Button
+        android:id="@+id/btnStd10"
+        android:text="Standard 10"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/btnStd9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

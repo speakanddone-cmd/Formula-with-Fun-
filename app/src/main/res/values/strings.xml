@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Formula with Fun</string>
+
+    <!-- Main & Home Screen -->
+    <string name="start_speaking_your_list">Start speaking your list</string>
+    <string name="shopping_greeting">Welcome! Wishing you a wonderful day. Let’s start making your shopping list now.</string>
+    <string name="shopping_list">shopping list</string>
+    <string name="say_shopping_list">Welcome, please say Shopping List.</string>
+    <string name="add_more">Add More</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="close_app">Close App</string>
+
+    <string name="restart">Restart</string>
+    <string name="finished">Finished</string>
+    <string name="tips_start_list">Before starting list, please remember these points. Say FINISHED when you complete your list.</string>
+    <string name="speak_first_item_tip">Say FINISHED when you complete your list.</string>
+    <string name="speak_first_item">Speak your first item after opening the mic.</string>
+    <string name="say_continue_or_listen_next_screen">In the next screen say "CONTINUE" or "LISTEN" after pressing the mic.</string>
+
+
+
+    <!-- Voice Prompts / Dialogs -->
+    <string name="say_continue_or_listen">Say \'CONTINUE\' or say \'LISTEN\'.</string>
+    <string name="say_continue">Say \'CONTINUE\'</string>
+    <string name="say_listen">or say \'LISTEN\'</string>
+
+    <string name="did_not_catch">I did not catch that. Please say again.</string>
+    <string name="did_not_understand">I did not understand. Say notes or exit.</string>
+    <string name="voice_input_not_supported">Voice input not supported.</string>
+    <string name="goodbye">Goodbye!</string>
+
+    <!-- Keywords for logic/voice recognition -->
+    <string name="continue_keyword">continue</string>
+    <string name="list_keyword">list</string>
+    <string name="exit_keyword">exit</string>
+    <string name="close_keyword">close</string>
+    <string name="yes_keyword">yes</string>
+    <string name="no_keyword">no</string>
+    <string name="edit_keyword">edit</string>
+    <string name="save_keyword">save</string>
+    <string name="done_keyword">done</string>
+    <string name="finish_keyword">finish</string>
+    <string name="one_keyword">one</string>
+    <string name="two_keyword">two</string>
+    <string name="three_keyword">three</string>
+    <string name="four_keyword">four</string>
+    <string name="five_keyword">five</string>
+    <string name="six_keyword">six</string>
+    <string name="seven_keyword">seven</string>
+    <string name="eight_keyword">eight</string>
+    <string name="nine_keyword">nine</string>
+    <string name="ten_keyword">ten</string>
+
+    <!-- Notes/List Features -->
+    <string name="say_item">Say item.</string>
+    <string name="next_item_or_done">Next item or done?</string>
+    <string name="edit_or_save">Edit or save?</string>
+    <string name="list_saved">List saved.</string>
+    <string name="want_to_hear_list">Want to hear list?</string>
+    <string name="say_new_item">Say new item.</string>
+    <string name="say_item_number_to_edit">Say item number to edit.</string>
+    <string name="say_valid_item_number">Say a valid item number.</string>
+    <string name="okay">Okay.</string>
+    <string name="list_is_empty">List is empty.</string>
+    <string name="please_say_first_item">Please say your first item</string>
+    <string name="next_please">Next please</string>
+    <string name="list_auto_saved">I have saved this list. When you want to listen, just open the app again.</string>
+    <string name="history_keyword">history</string>
+    <string name="notes_keyword">notes</string>
+    <string name="your_list">Your List</string>
+    <string name="mute">Mute</string>
+    <string name="muted">Muted</string>
+    <string name="unmuted">Unmuted</string>
+
+
+    <!-- Notes/History Screens -->
+    <string name="speak">Speak</string>
+    <string name="view_history">View History</string>
+    <string name="no_history_found">No history found.</string>
+    <string name="date_label">Date: %1$s</string>
+    <string name="no_items">No items</string>
+    <string name="opening_notes">Opening Notes screen.</string>
+    <string name="opening_history">Opening History screen.</string>
+    <string name="say_notes_or_exit">Say notes or exit.</string>
+    <string name="welcome_say_notes_or_exit">Welcome. Say notes or exit.</string>
+    <string name="say_notes_history_or_exit">Open notes, history, or exit.</string>
+
+    <string name="tts_guide_title">How to enable Google Voice in your selected language</string>
+    <string name="tts_step1">Step 1: After pressing "Open Settings", tap on "Preferred engine".</string>
+    <string name="tts_step2">Step 2: Select "Speech Recognition and Synthesis from Google".</string>
+    <string name="tts_step3">Step 3: Press the "BACK(&lt;)" button to return to this app and start using your language!</string>
+    <string name="open_settings">Open Settings</string>
+
+
+    <!-- Languages -->
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="marathi">Marathi</string>
+    <string name="gujarati">Gujarati</string>
+</resources>

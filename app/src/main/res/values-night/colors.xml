@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary app colors (dark mode) - tuned to be visible on dark background -->
+    <color name="colorPrimary">#1B5E20</color>       <!-- slightly darker green for night -->
+    <color name="colorPrimaryDark">#143d14</color>
+    <color name="colorAccent">#FFB300</color>
+    <color name="fadedGreen">#388E3C</color>
+
+    <!-- Background / surfaces -->
+    <color name="background">#121212</color>         <!-- dark background -->
+    <color name="colorSurface">#1E1E1E</color>       <!-- slightly lighter card surface -->
+    <color name="formulaCard">#1E1E1E</color>
+
+    <!-- On-* colors for readability -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSurface">#E0E0E0</color>
+    <color name="colorOnBackground">#E0E0E0</color>
+
+    <!-- Text / hints -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#CFCFCF</color>
+
+    <!-- Search / input styling (dark-friendly) -->
+    <color name="searchBorderGreen">#2E7D32</color>
+    <color name="search_text">#FFFFFF</color>
+    <color name="search_hint">#88FFFFFF</color>
+
+    <!-- Favorites / speaker -->
+    <color name="starActive">#F9A825</color>     <!-- a yellow visible on dark -->
+    <color name="starInactive">#555555</color>
+    <color name="speakerActive">#81C784</color>
+    <color name="speakerInactive">#9E9E9E</color>
+
+    <!-- Exit / destructive -->
+    <color name="exitRed">#EF5350</color>
+
+    <!-- Quiz Option Buttons Palette (night) -->
+    <color name="optionNormalBg">#4B06B7</color>
+    <color name="optionNormalBorder">#4B06B7</color>
+    <color name="optionSelectedBg">#7D3CFA</color>
+    <color name="optionSelectedBorder">#FFFFFF</color>
+    <color name="optionPressedBg">#7D3CFA</color>
+    <color name="optionPressedBorder">#FFFFFF</color>
+
+    <!-- Legacy / compatibility names -->
+    <color name="textPrimaryAlt">#212121</color>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quizLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <!-- Score and Question Count Row -->
+    <LinearLayout
+        android:id="@+id/scoreRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Score: 0"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/tvQuestionCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1/10"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Quiz Question -->
+    <TextView
+        android:id="@+id/tvQuizQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Question will appear here"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/scoreRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"/>
+
+    <!-- Answer Options (4 Boxes) -->
+    <LinearLayout
+        android:id="@+id/optionsContainer"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvQuizQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Option 1"
+            android:textSize="17sp"
+            android:background="@drawable/option_box_bg_selector"
+            android:textColor="@color/option_text_color"
+            android:gravity="start|center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:stateListAnimator="@null"
+            android:drawableLeft="@drawable/option_icon_selector"
+            android:drawablePadding="12dp"/>
+
+
+        <Button
+            android:id="@+id/btnOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Option 2"
+            android:textSize="17sp"
+            android:background="@drawable/option_box_bg_selector"
+            android:textColor="@color/option_text_color"
+            android:gravity="start|center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:stateListAnimator="@null"
+            android:drawableLeft="@drawable/option_icon_selector"
+            android:drawablePadding="12dp"/>
+
+
+        <Button
+            android:id="@+id/btnOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Option 3"
+            android:textSize="17sp"
+            android:background="@drawable/option_box_bg_selector"
+            android:textColor="@color/option_text_color"
+            android:gravity="start|center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:stateListAnimator="@null"
+            android:drawableLeft="@drawable/option_icon_selector"
+            android:drawablePadding="12dp"/>
+
+
+        <Button
+            android:id="@+id/btnOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Option 4"
+            android:textSize="17sp"
+            android:background="@drawable/option_box_bg_selector"
+            android:textColor="@color/option_text_color"
+            android:gravity="start|center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:stateListAnimator="@null"
+            android:drawableLeft="@drawable/option_icon_selector"
+            android:drawablePadding="12dp"/>
+
+    </LinearLayout>
+
+    <!-- Spacer to push buttons down if needed -->
+    <View
+        android:id="@+id/vertical_spacer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/optionsContainer"
+        app:layout_constraintBottom_toTopOf="@id/btnRowQuiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Row: SKIP (left), SUBMIT (right) -->
+    <LinearLayout
+        android:id="@+id/btnRowQuiz"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/vertical_spacer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp">
+
+        <!-- Skip Button (LEFT) -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/starActive"
+            android:textSize="17sp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"/>
+
+        <!-- Submit Button (RIGHT) -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="17sp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

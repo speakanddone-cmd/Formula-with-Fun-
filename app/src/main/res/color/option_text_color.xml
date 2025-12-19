@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- when selected -> use white (or textPrimaryAlt) -->
+    <item android:state_selected="true" android:color="@color/textPrimaryAlt" />
+    <!-- default -> use on-surface color so it looks like normal text -->
+    <item android:color="@color/colorOnSurface" />
+</selector>

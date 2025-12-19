@@ -1,0 +1,14 @@
+/build
+# Crash & heap dumps
+*.hprof
+hs_err_pid*.log
+replay_pid*.log
+
+# Android / Gradle
+.gradle/
+build/
+caches/
+.tmp/
+
+# Local config
+local.properties

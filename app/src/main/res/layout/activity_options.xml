@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Top banner: use primary color (good contrast in both modes) -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/optionsToolbarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical|center"
+            android:text="Formula with Fun"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose where you want to practice"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
+                android:paddingBottom="12dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <!-- 1: All formulas -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAllFormulas"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:tint="?attr/colorOnSurface"
+                            android:src="@drawable/ic_list" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAllFormulas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All Formulas"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingTop="8dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="?attr/colorOnPrimary"
+                            style="@style/Widget.MaterialComponents.Button.TextButton" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 2: Specific formula -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSpecificFormula"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:tint="?attr/colorOnSurface"
+                            android:src="@drawable/ic_search_big" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSpecificFormula"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Specific Formula"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingTop="8dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="?attr/colorOnPrimary"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 3: Marked -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMarkedFormulas"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:tint="?attr/colorOnSurface"
+                            android:src="@drawable/ic_favorite_big" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMarkedFormulas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Marked"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingTop="8dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="?attr/colorOnPrimary"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 4: Quiz -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardQuiz"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:tint="?attr/colorOnSurface"
+                            android:src="@drawable/ic_quiz_big" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnQuizFromOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quiz"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingTop="8dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="?attr/colorOnPrimary"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap any option to get started — happy learning!"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnBackground"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
